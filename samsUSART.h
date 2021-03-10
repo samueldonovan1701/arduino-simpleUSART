@@ -175,7 +175,7 @@ public:
         *CSRB &= 0b11110111;
     }
 
-//UCSZ2 (R/W) (See FrameSize funcs)
+    //UCSZ2 (R/W) (See FrameSize funcs)
     //RXB8 (R)
     byte GetRxBit9()
     {
@@ -267,7 +267,7 @@ public:
     //UCPOL
     enum ClockPolarity{
         RISING_EDGE = 0,
-        RALLING_EDGE = 1
+        FALLING_EDGE = 1
     };
     ClockPolarity GetClockPolarity()
     {
