@@ -211,4 +211,3 @@ Sets the clock polarity mode the USART port will use for communication
 
 # Limitations
 - Need some familiarity with USART
-- Cannot easily send numbers over serial

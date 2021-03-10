@@ -307,9 +307,20 @@ public:
             Write(buffer[i]);
         } 
     }
+    void Write(int i, int base=10)
+    {
+        char buf[20];
+        itoa(i, buf, base);
+        Write(buf);
+    }
     void Writeln(char* buffer)
     {
         Write(buffer);
+        Write('\n');
+    }
+    void Writeln(int i, int base=10)
+    {
+        Write(i, base);
         Write('\n');
     }
     byte Read()
