@@ -1,5 +1,5 @@
-#ifndef SAMS_SERIAL
-#define SAMS_SERIAL
+#ifndef SD_ARDUINO_USART
+#define SD_ARDUINO_USART
 
 #include <avr/io.h>
 typedef uint8_t byte;
