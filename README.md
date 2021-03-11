@@ -4,9 +4,9 @@ Better Serial (USART) communication for Arduino
 Written for and tested on a ATMEGA2560
 
 ## Usage
-To use the library, copy `samsUSART.h` into your project folder and
+To use the library, clone or download it to your project directory and
 ```c
-#include "samsUSART.h"
+#include "./arduino-usart/USART.h"
 ```
 
 ### Pre-definitions
