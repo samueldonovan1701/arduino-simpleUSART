@@ -1,12 +1,12 @@
 # arduino-usart
-Better Serial (USART) communication for Arduino
+Simple Serial (USART) communication for Arduino
 
 Written for and tested on a ATMEGA2560
 
 ## Usage
 To use the library, clone or download it to your project directory and
 ```c
-#include "./arduino-usart/USART.h"
+#include "arduino-simpleUSART/simpleUSART.h"
 ```
 
 ### Pre-definitions

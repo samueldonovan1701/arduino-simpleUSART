@@ -1,5 +1,5 @@
-#ifndef SD_ARDUINO_USART
-#define SD_ARDUINO_USART
+#ifndef SIMPLE_USART
+#define SIMPLE_USART
 
 #include <avr/io.h>
 typedef uint8_t byte;
