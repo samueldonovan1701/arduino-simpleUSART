@@ -317,11 +317,13 @@ public:
     {
         Write(buffer);
         Write('\n');
+        Write('\r');
     }
     void Writeln(int i, int base=10)
     {
         Write(i, base);
         Write('\n');
+        Write('\r');
     }
     byte Read()
     {
@@ -339,16 +341,14 @@ public:
 };
 
 //USART Definitions//
-    #ifdef UDR0
-        USART USART0 = USART(0);
-    #endif
-    #ifdef UDR1
-        USART USART1 = USART(1);
-    #endif
-    #ifdef UDR2
-        USART USART2 = USART(2);
-    #endif
-    #ifdef UDR3
-        USART USART3 = USART(3);
-    #endif
+const USART USART0 = USART(0);
+const USART USART1 = USART(1);
+const USART USART2 = USART(2);
+const USART USART3 = USART(3);
+
+//Interrupt Macro//
+#define USART_RX_ISR(N) ISR(USART##N##_RX_vect)
+#define USART_TX_ISR(N) ISR(USART##N##_TX_vect)
+#define USART_DR_ISR(N) ISR(USART##N##_UDRE_vect)
+
 #endif
