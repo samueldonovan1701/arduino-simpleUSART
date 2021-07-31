@@ -9,7 +9,7 @@ To use the library, clone or download it to your project directory and
 #include "avrUSART/USART.h"
 ```
 ## Pre-definitions
-USART0 through USART3 are conditionally defined in `samsUSART.h`. It is recommended to use these rather than instantiating a new USART object. 
+`USART0` through `USART3` are conditionally defined. It is recommended to use these rather than instantiating a new USART object. 
 
 If you wish to access other USART ports, you will have to instantiate them yourself.
 
