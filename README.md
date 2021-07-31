@@ -6,7 +6,7 @@ Written for and tested on a ATMEGA2560
 ## Usage
 To use the library, clone or download it to your project directory and
 ```c
-#include "arduino-simpleUSART/simpleUSART.h"
+#include "avrUSART/USART.h"
 ```
 ## Pre-definitions
 USART0 through USART3 are conditionally defined in `samsUSART.h`. It is recommended to use these rather than instantiating a new USART object. 
